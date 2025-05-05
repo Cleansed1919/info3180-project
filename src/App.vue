@@ -16,7 +16,7 @@
           {{ isDark ? '☀️ Light' : '🌙 Dark' }}
         </button>
         <div class="brand">
-          <img :src="flag" alt="Jamaican Flag" class="flag" />
+          <img src="@/assets/jm.png" alt="Jamaican Flag" class="flag">
           <div class="app-title">Jam-Date</div>
         </div>
       </div>
@@ -30,8 +30,6 @@
 
 <script setup>
 import { ref, onMounted, watch } from 'vue'
-// adjust this to your actual path or alias
-import flag from '/Users/Cley/Downloads/1/info3180-vuejs-flask working app/src/assets/jm.png'
 
 const isDark = ref(false)
 
